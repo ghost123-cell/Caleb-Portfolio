@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Selimelu Owabor | Law Graduate & Administrative Specialist</title>
+    
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navyPrimary: '#0B132B',
+                        navySecondary: '#1C2541',
+                        slateTone: '#3A506B',
+                        slateLight: '#4A6572',
+                        goldAccent: '#C5A059',
+                        goldHover: '#B08B46',
+                        creamBg: '#F8F9FA',
+                        cardWhite: '#FFFFFF',
+                        borderLight: '#E2E8F0',
+                        textDark: '#1E293B',
+                        textMuted: '#64748B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Modern Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8F9FA;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+        
+        /* Subtle Shadows & Cards */
+        .legal-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 20px -2px rgba(11, 19, 43, 0.05);
+            transition: all 0.25s ease-in-out;
+        }
+        .legal-card:hover {
+            border-color: #C5A059;
+            box-shadow: 0 10px 25px -5px rgba(11, 19, 43, 0.1);
+        }
+
+        .gold-border-left {
+            border-left: 4px solid #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-creamBg text-textDark font-sans antialiased selection:bg-navyPrimary selection:text-white">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navyPrimary/95 backdrop-blur-md border-b border-navySecondary">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="font-display text-xl font-bold tracking-tight text-white hover:text-goldAccent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-scale-balanced text-goldAccent text-base"></i>
+                <span>CSO</span>
+                <span class="text-goldAccent font-normal text-xs ml-1 hidden sm:inline-block tracking-widest uppercase">| Legal & Admin</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-goldAccent transition-colors">About</a>
+                <a href="#competencies" class="hover:text-goldAccent transition-colors">Competencies</a>
+                <a href="#experience" class="hover:text-goldAccent transition-colors">Experience</a>
+                <a href="#education" class="hover:text-goldAccent transition-colors">Education</a>
+                <a href="#contact" class="hover:text-goldAccent transition-colors">Contact</a>
+            </div>
+
+            <!-- Action Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-goldAccent text-navyPrimary rounded-md hover:bg-goldHover transition-all shadow-sm">
+                Get In Touch
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navySecondary border-b border-navyPrimary px-6 py-4 space-y-4 text-slate-200">
+            <a href="#about" class="block hover:text-goldAccent transition-colors mobile-link">About</a>
+            <a href="#competencies" class="block hover:text-goldAccent transition-colors mobile-link">Competencies</a>
+            <a href="#experience" class="block hover:text-goldAccent transition-colors mobile-link">Experience</a>
+            <a href="#education" class="block hover:text-goldAccent transition-colors mobile-link">Education</a>
+            <a href="#contact" class="block hover:text-goldAccent transition-colors mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="min-h-screen pt-32 pb-20 px-6 flex items-center justify-center bg-gradient-to-b from-navyPrimary via-navySecondary to-slateTone text-white relative overflow-hidden">
+        <!-- Subtle Background Crest Overlay -->
+        <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+            <i class="fa-solid fa-scale-balanced text-[30rem]"></i>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-navySecondary/80 border border-goldAccent/30 text-xs text-goldAccent uppercase tracking-widest font-mono shadow-inner">
+                <i class="fa-solid fa-gavel text-xs"></i>
+                <span>Law Graduate (LL.B) & Corporate Admin Specialist</span>
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight">
+                Caleb Selimelu <span class="text-goldAccent">Owabor</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                Combining legal rigour in statutory compliance and contract drafting with executive administrative competence and structured workflow management.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-goldAccent text-navyPrimary font-semibold rounded-md hover:bg-goldHover transition-all text-sm uppercase tracking-wider shadow-lg">
+                    Contact Caleb
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 bg-navySecondary/60 text-white font-semibold rounded-md border border-slate-500 hover:bg-navySecondary transition-all text-sm uppercase tracking-wider">
+                    Executive Profile
+                </a>
+            </div>
+
+            <!-- Quick Metadata Badges -->
+            <div class="pt-12 grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-slate-700/60 max-w-2xl mx-auto text-left">
+                <div class="p-3">
+                    <p class="text-xs text-slate-400 uppercase tracking-wider">Primary Base</p>
+                    <p class="text-sm font-medium text-white mt-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-goldAccent text-xs"></i>
+                        <span>Ado-Ekiti, Nigeria</span>
+                    </p>
+                </div>
+                <div class="p-3">
+                    <p class="text-xs text-slate-400 uppercase tracking-wider">Qualification</p>
+                    <p class="text-sm font-medium text-white mt-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-graduation-cap text-goldAccent text-xs"></i>
+                        <span>LL.B Law Graduate</span>
+                    </p>
+                </div>
+                <div class="p-3 col-span-2 md:col-span-1">
+                    <p class="text-xs text-slate-400 uppercase tracking-wider">Current Post</p>
+                    <p class="text-sm font-medium text-white mt-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-briefcase text-goldAccent text-xs"></i>
+                        <span>Admin Assistant @ 3way</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT / EXECUTIVE SUMMARY ==================== -->
+    <section id="about" class="py-24 px-6 border-b border-borderLight bg-white">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">01 // Profile Summary</h2>
+                    <h3 class="font-display text-3xl sm:text-4xl font-bold text-navyPrimary mt-1">Executive Overview</h3>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-8 space-y-6 text-slateTone leading-relaxed text-base sm:text-lg">
+                    <p>
+                        A detail-oriented and analytical Law graduate (LL.B) with practical experience spanning legal drafting, administrative management, and corporate operations.
+                    </p>
+                    <p>
+                        Proven ability to handle formal legal notices, tenancy agreements, commercial contracts, official corporate correspondence, and administrative system administration.
+                    </p>
+                    <p>
+                        Combines a solid understanding of statutory frameworks with operational competence to drive efficiency, compliance, and structured workflows within dynamic corporate environments.
+                    </p>
+                </div>
+
+                <!-- Stats / Highlights Sidebar -->
+                <div class="md:col-span-4 legal-card p-6 rounded-lg space-y-6 bg-creamBg gold-border-left">
+                    <h4 class="text-sm font-bold text-navyPrimary uppercase tracking-wider border-b border-borderLight pb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-landmark text-goldAccent"></i>
+                        <span>Core Focus</span>
+                    </h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs text-textMuted block">Primary Domain</span>
+                            <span class="text-sm text-navyPrimary font-semibold">Legal & Regulatory Support</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-textMuted block">Operational Expertise</span>
+                            <span class="text-sm text-navyPrimary font-semibold">Corporate Admin & Records</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-textMuted block">Drafting Strengths</span>
+                            <span class="text-sm text-navyPrimary font-semibold">Technical, Creative & Persuasive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CORE COMPETENCIES ==================== -->
+    <section id="competencies" class="py-24 px-6 border-b border-borderLight bg-creamBg">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div>
+                <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">02 // Capability Spectrum</h2>
+                <h3 class="font-display text-3xl sm:text-4xl font-bold text-navyPrimary mt-1">Core Competencies</h3>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Competency Card 1 -->
+                <div class="legal-card p-6 rounded-lg space-y-4">
+                    <div class="w-10 h-10 rounded-md bg-navyPrimary text-goldAccent flex items-center justify-center">
+                        <i class="fa-solid fa-balance-scale text-lg"></i>
+                    </div>
+                    <h4 class="font-display text-lg font-bold text-navyPrimary">Legal & Regulatory Support</h4>
+                    <ul class="text-sm text-slateTone space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Contract Drafting</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Tenancy Agreements</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Serving Legal Notices</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Regulatory Compliance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Competency Card 2 -->
+                <div class="legal-card p-6 rounded-lg space-y-4">
+                    <div class="w-10 h-10 rounded-md bg-navyPrimary text-goldAccent flex items-center justify-center">
+                        <i class="fa-solid fa-building-columns text-lg"></i>
+                    </div>
+                    <h4 class="font-display text-lg font-bold text-navyPrimary">Corporate & Operations</h4>
+                    <ul class="text-sm text-slateTone space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>System Administration</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Records Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Official Correspondence</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Process Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Competency Card 3 -->
+                <div class="legal-card p-6 rounded-lg space-y-4">
+                    <div class="w-10 h-10 rounded-md bg-navyPrimary text-goldAccent flex items-center justify-center">
+                        <i class="fa-solid fa-file-contract text-lg"></i>
+                    </div>
+                    <h4 class="font-display text-lg font-bold text-navyPrimary">Documentation & Skills</h4>
+                    <ul class="text-sm text-slateTone space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Document Drafting & Formatting</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Technical Writing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Microsoft Office Suite</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>WPS Office Suite</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Competency Card 4 -->
+                <div class="legal-card p-6 rounded-lg space-y-4">
+                    <div class="w-10 h-10 rounded-md bg-navyPrimary text-goldAccent flex items-center justify-center">
+                        <i class="fa-solid fa-feather-pointed text-lg"></i>
+                    </div>
+                    <h4 class="font-display text-lg font-bold text-navyPrimary">Strategic Writings</h4>
+                    <ul class="text-sm text-slateTone space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Technical Writing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Creative Writing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Persuasive Writing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                            <span>Executive Summaries</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Competency Card 5 -->
+                <div class="legal-card p-6 rounded-lg space-y-4 sm:col-span-2 lg:col-span-2 gold-border-left">
+                    <div class="w-10 h-10 rounded-md bg-navyPrimary text-goldAccent flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-lg"></i>
+                    </div>
+                    <h4 class="font-display text-lg font-bold text-navyPrimary">Professional Attributes</h4>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slateTone">
+                        <div class="space-y-2">
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                                <span>Analytical Thinking & Statutory Logic</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                                <span>Problem Solving & Dispute Mitigation</span>
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                                <span>Cross-Functional Collaboration</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-xs text-goldAccent"></i>
+                                <span>Confidentiality & Discretion</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WORK EXPERIENCE ==================== -->
+    <section id="experience" class="py-24 px-6 border-b border-borderLight bg-white">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div>
+                <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">03 // Career Path</h2>
+                <h3 class="font-display text-3xl sm:text-4xl font-bold text-navyPrimary mt-1">Work Experience</h3>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Role 1 -->
+                <div class="legal-card p-8 rounded-lg space-y-6 gold-border-left">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderLight pb-4">
+                        <div>
+                            <h4 class="font-display text-xl font-bold text-navyPrimary">Administrative Assistant</h4>
+                            <p class="text-goldAccent font-semibold text-sm">3way Communications Ltd</p>
+                        </div>
+                        <span class="inline-block px-3 py-1 rounded-md bg-creamBg border border-borderLight text-navyPrimary text-xs font-mono font-bold w-fit">
+                            March 2025 – Present
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-slateTone text-sm sm:text-base leading-relaxed">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent mt-1">•</span>
+                            <span>Administer corporate records and document pipelines, ensuring seamless data retrieval and high standards of information management.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent mt-1">•</span>
+                            <span>Draft, format, and edit official correspondence, executive summaries, and formal operational documentation.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent mt-1">•</span>
+                            <span>Provide key system administration support, managing user access, digital tools, and operational workflows across administrative units.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent mt-1">•</span>
+                            <span>Streamline daily office operations and coordinate administrative communications between internal teams and key stakeholders.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="legal-card p-8 rounded-lg space-y-6 border-l-4 border-l-slateTone">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderLight pb-4">
+                        <div>
+                            <h4 class="font-display text-xl font-bold text-navyPrimary">Law Intern</h4>
+                            <p class="text-slateTone font-semibold text-sm">O. Ogene & Associates</p>
+                        </div>
+                        <span class="inline-block px-3 py-1 rounded-md bg-creamBg border border-borderLight text-textMuted text-xs font-mono w-fit">
+                            Nov 2023 – Oct 2024
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-slateTone text-sm sm:text-base leading-relaxed">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-slateTone mt-1">•</span>
+                            <span>Prepared and drafted legal documentation, including commercial contracts, tenancy agreements, and legal notices.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-slateTone mt-1">•</span>
+                            <span>Executed the formal service of legal notices and processes in compliance with standard procedural rules.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-slateTone mt-1">•</span>
+                            <span>Conducted legal research to support senior counsel in case analysis, client advisory, and legal strategy formulation.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-slateTone mt-1">•</span>
+                            <span>Organized case files and legal correspondence to maintain comprehensive firm documentation standards.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EDUCATION & VOLUNTEER ==================== -->
+    <section id="education" class="py-24 px-6 border-b border-borderLight bg-creamBg">
+        <div class="max-w-5xl mx-auto space-y-16">
+            
+            <!-- Education -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">04 // Qualifications</h2>
+                    <h3 class="font-display text-3xl sm:text-4xl font-bold text-navyPrimary mt-1">Education</h3>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="legal-card p-6 rounded-lg space-y-3 gold-border-left">
+                        <span class="text-xs font-mono text-goldAccent font-bold">2017 – 2025</span>
+                        <h4 class="font-display text-lg font-bold text-navyPrimary">Bachelor of Laws (LL.B)</h4>
+                        <p class="text-sm text-slateTone">Ambrose Alli University, Ekpoma, Edo State</p>
+                    </div>
+
+                    <div class="legal-card p-6 rounded-lg space-y-3">
+                        <span class="text-xs font-mono text-textMuted">2016</span>
+                        <h4 class="font-display text-lg font-bold text-navyPrimary">Senior School Certificate Examination (NECO)</h4>
+                        <p class="text-sm text-slateTone">Guaranty Trust School</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Experience -->
+            <div class="space-y-8 pt-6 border-t border-borderLight">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">05 // Civic Service</h2>
+                    <h3 class="font-display text-2xl sm:text-3xl font-bold text-navyPrimary mt-1">Volunteer Work</h3>
+                </div>
+
+                <div class="legal-card p-6 rounded-lg space-y-3">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h4 class="font-display text-lg font-bold text-navyPrimary">Volunteer | Panel Hearing for Victims of End SARS Protest</h4>
+                        <span class="text-xs font-mono text-goldAccent font-bold">January 2021</span>
+                    </div>
+                    <p class="text-sm text-slateTone leading-relaxed">
+                        Assisted with administrative logistics, documentation, and stakeholder assistance during sensitive panel proceedings.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT / FOOTER ==================== -->
+    <section id="contact" class="py-24 px-6 bg-navyPrimary text-white relative">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-xs uppercase tracking-widest text-goldAccent font-mono font-bold">06 // Professional Contact</h2>
+            <h3 class="font-display text-4xl sm:text-5xl font-bold text-white tracking-tight">
+                Initiate Professional Engagement.
+            </h3>
+            <p class="text-slate-300 max-w-xl mx-auto">
+                Open to corporate legal advisor roles, administrative leadership, process optimization consulting, and strategic drafting assignments.
+            </p>
+
+            <!-- Direct Contact Links -->
+            <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto pt-4">
+                <a href="mailto:mrenergyakamrdetroit@gmail.com" class="bg-navySecondary border border-slate-700 p-5 rounded-lg flex items-center justify-center space-x-3 text-white hover:border-goldAccent hover:bg-slateTone/30 transition-all shadow-md">
+                    <i class="fa-regular fa-envelope text-lg text-goldAccent"></i>
+                    <span class="text-sm font-medium">mrenergyakamrdetroit@gmail.com</span>
+                </a>
+                <a href="tel:08111084530" class="bg-navySecondary border border-slate-700 p-5 rounded-lg flex items-center justify-center space-x-3 text-white hover:border-goldAccent hover:bg-slateTone/30 transition-all shadow-md">
+                    <i class="fa-solid fa-phone text-lg text-goldAccent"></i>
+                    <span class="text-sm font-medium">08111084530 / 08039484620</span>
+                </a>
+            </div>
+
+            <!-- Download CV Trigger & Referees Note -->
+            <div class="pt-8 space-y-4">
+                <button onclick="window.print()" class="inline-flex items-center space-x-2 px-8 py-4 bg-goldAccent text-navyPrimary font-semibold rounded-md hover:bg-goldHover transition-all text-sm uppercase tracking-wider shadow-lg">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print / Download Resume</span>
+                </button>
+                <p class="text-xs text-slate-400">Referees available upon request.</p>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-16 text-xs text-slate-400 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>© Caleb Selimelu Owabor. All rights reserved.</p>
+                <p class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-gavel text-goldAccent"></i>
+                    <span>Executive Legal & Administrative Portfolio</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu & Interactivity -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
